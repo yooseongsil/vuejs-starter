@@ -3,6 +3,9 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import instance from './utils/axios';
+Vue.prototype.$axios = instance;
+
 Vue.config.productionTip = false;
 
 new Vue({
